@@ -1,15 +1,17 @@
-import Input from './components/Input';
-import Button from './components/Button';
+import { Routes, Route } from 'react-router-dom';
+import Main from './pages/Main';
+import History from './pages/History';
+import Navigation from './components/Nav';
 // import Player from './components/Player'
 
 function App() {
   return (
     <main>
-      <Input label="Name fo game" placeholder="e.g. Carcassonne" />
-      <Input label="Player nanmes" placeholder="e.g. Jon Doe, Jane Doe" />
-      <Button children="Create game" />
-      <Button children="Play" isDark="true" />
-      <Button children="History" />
+      <Routes>
+        <Route path="/play" element={<Main />} />
+        <Route path="/history" element={<History />} />
+      </Routes>
+      <Navigation />
     </main>
   );
 }

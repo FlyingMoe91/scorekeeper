@@ -17,4 +17,5 @@ export const Dark = Template.bind({});
 Dark.args = {
   children: 'click me',
   isDark: true,
+  doubleWidth: true,
 };
