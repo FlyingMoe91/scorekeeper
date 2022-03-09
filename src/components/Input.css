@@ -1,9 +1,0 @@
-.Input-container {
-  display: flex;
-  flex-direction: column;
-  margin: 10px;
-}
-
-.Input-field {
-  max-width: 500px;
-}

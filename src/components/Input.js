@@ -1,10 +1,20 @@
-import './Input.css';
+import styled from 'styled-components';
 
-export default function Input({ label, placeholder }) {
+export default function Input({ label, placeholder, id }) {
   return (
-    <div className="Input-container">
-      <label>{label}</label>
-      <input className="Input-field" placeholder={placeholder}></input>
-    </div>
+    <InputContainer>
+      <label htmlFor={id}>{label}</label>
+      <input id={id} placeholder={placeholder}></input>
+    </InputContainer>
   );
 }
+
+const InputContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+
+  input {
+    max-width: 500px;
+  }
+`;

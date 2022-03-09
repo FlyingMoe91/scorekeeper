@@ -11,4 +11,5 @@ export const Default = Template.bind({});
 Default.args = {
   label: 'labelname',
   placeholder: 'placeholder',
+  id: 'id',
 };
