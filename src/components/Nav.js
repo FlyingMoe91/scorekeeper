@@ -4,12 +4,8 @@ import styled from 'styled-components';
 export default function Navigation() {
   return (
     <NavStyled>
-      <LinkStyled isDark={true} to="/play">
-        Play
-      </LinkStyled>
-      <LinkStyled isDark={false} to="/history">
-        History
-      </LinkStyled>
+      <LinkStyled to="/play">Play</LinkStyled>
+      <LinkStyled to="/history">History</LinkStyled>
     </NavStyled>
   );
 }
@@ -17,16 +13,23 @@ const NavStyled = styled.nav`
   display: flex;
   justify-content: space-between;
   width: 500px;
-  margin: 10px;
 `;
 
 const LinkStyled = styled(NavLink)`
-  background-color: ${props => (props.isDark ? 'rgb(63, 63, 63)' : '#ddd')};
-  color: ${props => (props.isDark ? 'white' : 'inherit')};
+  background-color: #ddd;
+  color: black;
   border: none;
-  padding: 4px 12px;
+  padding: 4px;
+  margin-top: 20px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  border: 1px solid black;
+
+  &.active {
+    background-color: rgb(63, 63, 63);
+    color: white;
+  }
 `;

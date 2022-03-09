@@ -12,7 +12,7 @@ export default function Input({ label, placeholder, id }) {
 const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 10px;
+  margin-bottom: 10px;
 
   input {
     max-width: 500px;

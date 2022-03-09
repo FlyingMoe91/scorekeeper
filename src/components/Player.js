@@ -14,6 +14,7 @@ export default function Player({ name, score, onDecrement, onIncrement }) {
 const PlayerContainer = styled.section`
   display: flex;
   justify-content: right;
+  max-width: 500px;
 `;
 
 const PlayerName = styled.span`

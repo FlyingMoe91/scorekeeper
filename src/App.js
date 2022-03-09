@@ -2,7 +2,6 @@ import { Routes, Route } from 'react-router-dom';
 import Main from './pages/Main';
 import History from './pages/History';
 import Navigation from './components/Nav';
-// import Player from './components/Player'
 
 function App() {
   return (

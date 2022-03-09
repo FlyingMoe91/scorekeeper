@@ -13,6 +13,5 @@ const ButtonStyled = styled.button`
   color: ${props => (props.isDark ? 'white' : 'inherit')};
   border: none;
   padding: 4px 12px;
-  margin: 10px;
   width: ${props => (props.doubleWidth ? '500px' : '250px')};
 `;
